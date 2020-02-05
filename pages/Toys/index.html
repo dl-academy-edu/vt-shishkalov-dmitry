@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">
+      <img class="header-logo" src="/images/logo.svg" alt="logo" />
+    </a>
+    <nav class="header-nav">
+      <ul>
+        <li><a class="link link_nav" href="#">Blog</a></li>
+        <li><a class="link link_nav" href="/pages/Catalog/index.html">Catalog</a></li>
+        <li><a class="link link_nav" href="#">About Us</a></li>
+      </ul>
+      <ul>
+        <li><img class="search" src="/images/search.png" alt="search" /></li>
+        <li><a class="link link_cont" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">
+      Toy for kids
+    </h1>
+
+    <div class="section">
+      <a href="/index.html">Home</a>
+      <a href="/pages/Catalog/index.html">Catalog</a>
+      <a>Toys</a>
+    </div>
+
+    <form action="" class="buy" method="GET">
+      <label for="cost">Cost</label>
+      <input type="range" id="cost" name="cost" min="0" max="500" value="100">
+      <span>0</span>
+      <span>500</span>
+
+      <fieldset>
+        <legend>Color</legend>
+        <label for="color-black">Black</label>
+        <input type="checkbox" name="color" id="color-black" checked>
+        <label for="color-blue">Blue</label>
+        <input type="checkbox" name="color" id="color-blue">
+        <label for="color-green">Green</label>
+        <input type="checkbox" name="color" id="color-green">
+        <label for="color-white">White</label>
+        <input type="checkbox" name="color" id="color-white">
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery</legend>
+        <label for="delivery-free">Free shipping</label>
+        <input type="radio" name="delivery" id="delivery-free">
+        <label for="delivery-fast">Fast shipping</label>
+        <input type="radio" name="delivery" id="delivery-fast" checked>
+      </fieldset>
+
+      <fieldset>
+        <legend>Amount</legend>
+        <label for="small-amount">0-5</label>
+        <input type="radio" name="amount" id="small-amount" checked>
+        <label for="middle-amount">10-20</label>
+        <input type="radio" name="amount" id="middle-amount">
+        <label for="large-amount">20-50</label>
+        <input type="radio" name="amount" id="large-amount">
+      </fieldset>
+      <button type="submit" class="button">APPLY</button>
+    </form>
+
+    <div class="product">
+      <ul>
+        <li>
+          <a><img class="product-img" src="/images/toy-1.jpg" alt="sharky"></a>
+          <span>SHARKY BEAN BAG CHAIR COVER</span>
+          <span>$60.00 USD</span>
+        </li>
+        <li>
+          <a><img class="product-img" src="/images/toy-2.jpg" alt="brass"></a>
+          <span>BRASS DECO FRAMES</span>
+          <span>$66.00 USD</span>
+        </li>
+        <li>
+          <a><img class="product-img" src="/images/toy-3.jpg" alt="cibo"></a>
+          <span>CIBO FULL APRON</span>
+          <span>$60.00 USD</span>
+        </li>
+        <li>
+          <a><img class="product-img" src="/images/toy-4.jpg" alt="gumball machine"></a>
+          <span>GATCHA GATCHA GUMBALL MACHINE</span>
+          <span>$56.00 USD</span>
+        </li>
+        <li>
+          <a><img class="product-img" src="/images/toy-5.jpg" alt="candle"></a>
+          <span>CHRISTMAS ADVENT SCENTED CANDLE</span>
+          <span>$29.00 USD</span>
+        </li>
+        <li>
+          <a><img class="product-img" src="/images/toy-6.jpg" alt="tea light"></a>
+          <span>TANGLE SPINNING TEA LIGHT</span>
+          <span>$56.00 USD</span>
+        </li>
+      </ul>
+    </div>
+    <div class="pages">
+      <button class="left"></button>
+      <button class="numder">1</button>
+      <button class="numder">2</button>
+      <button class="numder">3</button>
+      <button class="numder">4</button>
+      <button class="right"></button>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <p class="footer-title">Navigation</p>
+        <ul>
+          <li><a class="footer-link" href="#">About Us</a></li>
+          <li><a class="footer-link" href="#">Blog</a></li>
+          <li><a class="footer-link" href="#">Design Services</a></li>
+          <li><a class="footer-link" href="#">Featured On</a></li>
+          <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="footer-link" href="#">Shop By Designer</a></li>
+        </ul>
+      </li>
+      <li>
+        <p class="footer-title">Customer Information</p>
+        <ul>
+          <li><a class="footer-link" href="#">Contact Us</a></li>
+          <li><a class="footer-link" href="#">Sale Exclusions</a></li>
+          <li><a class="footer-link" href="#">Shipping & Returns</a></li>
+          <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+          <li><a class="footer-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-link" href="#">Search</a></li>
+        </ul>
+      </li>
+      <li>
+        <p class="footer-title">Connect</p><br>
+        <form name="text" method="POST" action="">
+          <input type="email">
+          <button type="submit" class="button button_black"> Join </button>
+        </form>
+        <ul>
+          <li>
+            <a class="social-link" href="#"><img src="/images/f.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><img src="/images/twit.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><img src="/images/p.svg" alt="p" /></a>
+          </li>
+          <li>
+            <a class="social-link" href="#"><img src="/images/inst.svg" alt="instagram" /></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <p class="social-link">Company Rating</p>
+        <ul>
+          <li><img src="/images/Star.svg" alt="star" /></li>
+          <li><img src="/images/Star.svg" alt="star" /></li>
+          <li><img src="/images/Star.svg" alt="star" /></li>
+          <li><img src="/images/Star.svg" alt="star" /></li>
+          <li><img src="/images/Star.svg" alt="star" /></li>
+        </ul>
+      </li>
+      <li>
+        <p class="social-link">Copyright © 2018 Dlk • Design Life Kids</p>
+      </li>
+      <li>
+        <a href="#">Web Design — Direct Line Development</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
