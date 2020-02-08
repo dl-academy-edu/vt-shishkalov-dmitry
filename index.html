@@ -14,7 +14,7 @@
     <nav class="header-nav">
       <ul>
         <li><a class="link link_nav" href="#">Blog</a></li>
-        <li><a class="link link_nav" href="#">Catalog</a></li>
+        <li><a class="link link_nav" href="/pages/Catalog/index.html">Catalog</a></li>
         <li><a class="link link_nav" href="#">About Us</a></li>
       </ul>
       <ul>
@@ -214,6 +214,30 @@
       </li>
     </ul>
   </footer>
+
+  <form class="reg" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+    <label for="form-name" class="form-label">Name</label>
+    <input type="text" class="form-input" id="form-name" name="name">
+
+    <label for="form-phone" class="form-label">Phone</label>
+    <input type="tel" class="form-input_2" id="form-phone" name="phone">
+
+    <label for="form-email" class="form-label">E-mail</label>
+    <input type="email" class="form-input_2" id="form-email" name="email">
+
+    <label for="form-message" class="form-label">Message</label>
+    <textarea name="message" id="form-message">
+
+    </textarea>
+
+    <label for="form-accept" class="form-label">By clicking on the button, you consent to the processing of your
+      personal data</label>
+    <input type="checkbox" id="form-accept" name="accept">
+
+
+    <button type="submit" class="button">SUBMIT</button>
+    <button type="button">X</button>
+  </form>
 </body>
 
 </html>
