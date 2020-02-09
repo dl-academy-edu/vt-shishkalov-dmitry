@@ -1,0 +1,112 @@
+
+/* poster */
+
+.poster{
+  background-color: #EEE4DB;
+}
+
+.poster-title{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1E0606;
+}
+
+.slider-number{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.poster-text{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.section-footer{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #C29974;
+}
+
+/* category */
+
+.section-title{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;  
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.category-title{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.fon-grey{
+  background-color: #DBE4DB;
+}
+
+.fon-pink{
+  background-color:rgba(186, 142, 107, 0.3);
+}
+
+.fon-peach{
+  background-color:#F8F2DA;
+}
+
+.fon-lilac{
+  background-color: rgba(9, 3, 79, 0.17);
+}
+
+.section-text{
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+/* delivery */
+
+.delivery-link{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+}
+
+.delivery-link_bold{
+  font-weight: bold;
+  background-color:  rgba(112, 187, 220, 0.2);
+}
+
+/* add-inf */
+
+.add-inf{
+  background-color: #E1F0F7;;
+}
+
+h3{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #1E0606;
+}
+
