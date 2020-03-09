@@ -7,31 +7,32 @@
   <link
     href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,700i%7CMontserrat:300,400,700%7COpen+Sans:400,700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="/common.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header container">
     <a href="#">
       <img class="header-logo" src="/images/logo.svg" alt="logo" />
     </a>
     <nav class="header-nav">
-      <ul class="list_none">
+      <ul class="header-list-links list_none">
         <li><a class="link link_nav" href="/pages/Blog/index.html">Blog</a></li>
         <li><a class="link link_nav" href="/pages/Catalog/index.html">Catalog</a></li>
-        <li><a class="link link_nav" href="#">About Us</a></li>
+        <li><a class="link link_nav" href="/pages/Toys/index.html">Toys</a></li>
       </ul>
-      <ul class="list_none">
+      <ul class="header-list-search list_none">
         <li><img class="search" src="/images/search.png" alt="search" /></li>
-        <li><a class="link link_cont" href="#">Contact Us</a></li>
+        <li><a class="link link_cont" href="/pages/Contact us/index.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="poster">
+    <section class="poster container">
       <div class="slider">
         <p class="slider-number">01</p>
         <div class="slider-nav">
@@ -41,77 +42,82 @@
           <button class="button button_passive"></button>
         </div>
       </div>
-
-      <h2 class="poster-title">
-        THE OOH NOO COLLECTION
-      </h2>
-      <span class="poster-text">
-        Designed in Slovenia
-      </span>
-      <a class="button button_black" href="#">EXPLORE NOW</a>
-      <img class="poster-img" src="/images/monster.jpg" alt="monster" />
+      <div class="poster-text">
+        <h2 class="poster-title">
+          THE OOH NOO COLLECTION
+        </h2>
+        <span class="poster-design">
+          Designed in Slovenia
+        </span>
+        <a class="button button_black button_js" href="#"><span class="button-text">EXPLORE NOW</span></a>
+      </div>
+      <img class="poster-img" src="/images/monster.png" alt="monster" />
 
       <div class="section-footer">
-        Free (continental) USA shipping on all orders of $100 USD or more!
+        <span class="section-footer-text">Free (continental) USA shipping on all orders of $100 USD or more!</span>
       </div>
     </section>
 
-    <section class="category">
+    <section class="category container">
       <h2 class="section-title">
         Category Products
       </h2>
-      <ul class="list_none">
-        <li class="">
+      <ul class="categories list_none">
+        <li class="one-category">
           <a class="fon-grey" href="#"> <span class="category-title"> APPAREL KIDS </span>
-            <img class="category-img" src="/images/category-1.jpg" alt="APPAREL KIDS" /></a>
+            <img class="category-img-one" src="/images/category-1.png" alt="APPAREL KIDS" /></a>
         </li>
-        <li>
+        <li class="one-category">
           <a class="fon-pink" href="#"> <span class="category-title"> HOLIDAY SHOP </span>
             <img class="category-img" src="/images/category-2.jpg" alt="HOLIDAY SHOP" /></a>
         </li>
-        <li>
+        <li class="one-category">
           <a class="fon-peach" href="#"> <span class="category-title"> TOYS </span>
             <img class="category-img" src="/images/category-3.jpg" alt="TOYS" /></a>
         </li>
-        <li>
+        <li class="one-category">
           <a class="fon-lilac" href="#"> <span class="category-title"> ACCESSORIES </span>
             <img class="category-img" src="/images/category-4.jpg" alt="ACCESSORIES" /></a>
         </li>
       </ul>
-      <button class="button button_left"></button>
-      <button class="button button_right"></button>
-      <p class="section-text">
-        Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture
-        for kids and adults.
-      </p>
+      <div class="category-footer">
+        <button class="category-button"><img src="/images/button-left.png" alt="left"></button>
+        <button class="category-button"><img src="/images/button-right.png" alt="right"></button>
+        <p class="category-text section-text">
+          Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture
+          for kids and adults.
+        </p>
+      </div>
     </section>
 
-    <section class="delivery">
-      <h2 class="section-title">
-        Delivery
-      </h2>
+    <section class="delivery container">
       <img class="delivery-img" src="/images/delivery.jpg" alt="delivery" />
-      <ul class="list_none">
-        <li><a class="delivery-link delivery-link_bold" href="#"> Delivery </a></li>
-        <li><a class="delivery-link" href="#"> Guarantee </a></li>
-        <li><a class="delivery-link" href="#"> Credit </a></li>
-      </ul>
-      <p class="section-text">
-        Some days i feel like i've been working on dlk my entire life and
-        there are other days that i am completely shocked that four years have
-        flown by. It's simply magical.
-      </p>
-      <p class="section-text">
-        What started as an outlet to deal with the traumatic loss of my
-        husband, dlk has now become a truly happy place for me and i have you
-        and all of the beautiful designers that we work with to thank!
-      </p>
-      <a class="button button_black" href="#">LEARN MORE</a>
+      <div class="delivery-inf">
+        <h2 class="section-title">
+          Delivery
+        </h2>
+        <ul class="list_none">
+          <li><a class="delivery-link delivery-link_bold" href="#"> Delivery </a></li>
+          <li><a class="delivery-link" href="#"> Guarantee </a></li>
+          <li><a class="delivery-link" href="#"> Credit </a></li>
+        </ul>
+        <p class="delivery-text section-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years have
+          flown by. It's simply magical.
+        </p>
+        <p class="delivery-text section-text">
+          What started as an outlet to deal with the traumatic loss of my
+          husband, dlk has now become a truly happy place for me and i have you
+          and all of the beautiful designers that we work with to thank!
+        </p>
+        <a class="button delivery-button button_black" href="#"><span class="button-text">LEARN MORE</span></a>
+      </div>
     </section>
 
-    <section class="partners">
+    <section class="partners container">
       <h2 class="hidden">Partners</h2>
-      <ul class="list_none">
+      <ul class="partners-list list_none">
         <li>
           <a href="#"><img src="/images/partner-1.png" alt="mail" /></a>
         </li>
@@ -127,123 +133,142 @@
       </ul>
     </section>
 
-    <article class="add-inf">
-      <h2 class="section-title">
-        Design Life Kids
-      </h2>
-      <h3>
-        About Us
-      </h3>
-      <p class="section-text">
-        Some days i feel like i've been working on dlk my entire life and
-        there are other days that i am completely shocked that four years
-        have flown by. It's simply magical.
-      </p>
-      <a class="button button_black" href="#">buy now</a>
-    </article>
-    <article class="add-inf">
-      <h2 class="section-title">
-        Contacts
-      </h2>
-      <p class="section-text">
-        Some days i feel like i've been working on dlk my entire life and
-        there are other days that i am completely shocked that four years
-        have flown by. It's simply magical.
-      </p>
-      <img src="/images/map.jpg" alt="map" />
-    </article>
+    <div class="add-inf container">
+      <article class="about-us">
+        <h2 class="add-title section-title">
+          Design Life Kids
+        </h2>
+        <div class="about-us-paragraph">
+          <h3>
+            About Us
+          </h3>
+          <p class="about-us-text section-text">
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+          <a class="button button_black" href="#"><span class="button-text">buy now</span></a>
+        </div>
+      </article>
+      <article class="contacts">
+        <h2 class="add-title section-title">
+          Contacts
+        </h2>
+        <p class="contacts-text section-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years
+          have flown by. It's simply magical.
+        </p>
+      </article>
+    </div>
   </main>
 
   <footer>
-    <ul class="list_none">
-      <li>
-        <p class="footer-title">Navigation</p>
-        <ul class="list_none">
-          <li><a class="footer-link" href="#">About Us</a></li>
-          <li><a class="footer-link" href="#">Blog</a></li>
-          <li><a class="footer-link" href="#">Design Services</a></li>
-          <li><a class="footer-link" href="#">Featured On</a></li>
-          <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-          <li><a class="footer-link" href="#">Shop By Designer</a></li>
-        </ul>
-      </li>
-      <li>
-        <p class="footer-title">Customer Information</p>
-        <ul class="list_none">
-          <li><a class="footer-link" href="#">Contact Us</a></li>
-          <li><a class="footer-link" href="#">Sale Exclusions</a></li>
-          <li><a class="footer-link" href="#">Shipping & Returns</a></li>
-          <li><a class="footer-link" href="#">Terms & Conditions</a></li>
-          <li><a class="footer-link" href="#">Privacy Policy</a></li>
-          <li><a class="footer-link" href="#">Search</a></li>
-        </ul>
-      </li>
-      <li>
-        <p class="footer-title">Connect</p><br>
-        <form class="footer-form" name="text" method="POST" action="">
-          <input type="email" placeholder="Email">
-          <button type="submit" class="button button_black"> Join </button>
-        </form>
-        <ul class="list_none">
-          <li>
-            <a class="social-link" href="#"><img src="/images/f.svg" alt="facebook" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/twit.svg" alt="twitter" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/p.svg" alt="p" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/inst.svg" alt="instagram" /></a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <div class="container">
+      <ul class="footer-inf list_none">
+        <li class="footer-nav">
+          <p class="footer-title">Navigation</p>
+          <ul class="list_none">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">Blog</a></li>
+            <li><a class="footer-link" href="#">Design Services</a></li>
+            <li><a class="footer-link" href="#">Featured On</a></li>
+            <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+            <li><a class="footer-link" href="#">Shop By Designer</a></li>
+          </ul>
+        </li>
+        <li class="footer-custom">
+          <p class="footer-title">Customer Information</p>
+          <ul class="list_none">
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="#">Sale Exclusions</a></li>
+            <li><a class="footer-link" href="#">Shipping & Returns</a></li>
+            <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+            <li><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-link" href="#">Search</a></li>
+          </ul>
+        </li>
+        <li class="footer-connect">
+          <p class="footer-title">Connect</p>
+          <form class="footer-form" name="text" method="POST" action="">
+            <input type="email" placeholder="Email">
+            <button type="submit" class="button button_black"><span class="button-text">Join</span></button>
+          </form>
+          <ul class="footer-soc list_none">
+            <li>
+              <a class="social-link" href="#"><img src="/images/f.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/twit.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/p.svg" alt="p" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/inst.svg" alt="instagram" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <ul class="list_none">
-      <li>
-        <p class="footer-link">Company Rating</p>
-        <ul class="list_none">
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-        </ul>
-      </li>
-      <li>
-        <p class="footer-link">Copyright © 2018 Dlk • Design Life Kids</p>
-      </li>
-      <li>
-        <a class="footer-text" href="#">Web Design — Direct Line Development</a>
-      </li>
-    </ul>
+      <ul class="footer-last list_none">
+        <li class="footer-rating">
+          <p class="footer-link">Company Rating</p>
+          <ul class="stars list_none">
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-link">Copyright © 2018 Dlk • Design Life Kids</p>
+        </li>
+        <li>
+          <a class="footer-text" href="#">Web Design — Direct Line Development</a>
+        </li>
+      </ul>
+    </div>
   </footer>
+  <div class="modal-window modal-window-close modal-window_js">
+    <form class="registration" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
 
-  <form class="reg" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-    <label for="form-name" class="form-label">Name</label>
-    <input type="text" class="form-input" id="form-name" name="name">
+      <div class="large-row">
+        <label for="form-name" class="form-label">Name</label>
+        <input type="text" class="form-input form-input_js" id="form-name" name="name">
+      </div>
 
-    <label for="form-phone" class="form-label">Phone</label>
-    <input type="tel" class="form-input_2" id="form-phone" name="phone">
+      <div class="large-row">
+        <div class="little-row">
+          <label for="form-phone" class="form-label">Phone</label>
+          <input type="tel" class="form-input" id="form-phone" name="phone">
+        </div>
 
-    <label for="form-email" class="form-label">E-mail</label>
-    <input type="email" class="form-input_2" id="form-email" name="email">
+        <div class="little-row">
+          <label for="form-email" class="form-label">E-mail</label>
+          <input type="email" class="form-input" id="form-email" name="email">
+        </div>
+      </div>
 
-    <label for="form-message" class="form-label">Message</label>
-    <textarea name="message" id="form-message">
+      <div class="large-row">
+        <label for="form-message" class="form-label">Message</label>
+        <textarea class="large-row" name="message" id="form-message">
+          </textarea>
+      </div>
 
-    </textarea>
+      <div class="large-row">
+        <label for="form-accept" class="form-acception">By clicking on the button, you consent to the processing of
+          your
+          personal data</label>
+        <input type="checkbox" class="form-check" id="form-accept" name="accept">
+      </div>
 
-    <label for="form-accept" class="form-label">By clicking on the button, you consent to the processing of your
-      personal data</label>
-    <input type="checkbox" id="form-accept" name="accept">
-
-
-    <button type="submit" class="button">SUBMIT</button>
-    <button type="button">X</button>
-  </form>
+      <button type="submit" class="button button_black"><span class="button-text">SUBMIT</span></button>
+      <button type="button" class="button-close button-close_js">X</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
