@@ -76,6 +76,10 @@
   border: none;
 }
 
+.button_passive:hover{
+  background-color: #725F5B;
+}
+
 .poster-design{
   font-family: Crimson Text;
   font-style: italic;
@@ -134,46 +138,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.one-category{
-  display: flex;
-  width: 280px;
-  height: 270px;
-}
-
-
-.category-title{
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.category-img-one{
-  margin: 0 auto;
-  width: 244px;
-  height: 117px;
-  background-color: #DBE4DB;
-}
-
-.fon-grey{
-  display: flex;
-  background-color: #DBE4DB;
-}
-
-.fon-pink{
-  background-color:rgba(186, 142, 107, 0.3);
-}
-
-.fon-peach{
-  background-color:#F8F2DA;
-}
-
-.fon-lilac{
-  background-color: rgba(9, 3, 79, 0.17);
 }
 
 .category-footer{
@@ -348,14 +312,24 @@ h3{
 }
 
 .button-close{
+  width: 32px;
+  height: 31px;
   position: absolute;
-  top: -3px;
+  top: -8px;
   font-size: 15px;
-  right: -20px;
+  right: -32px;
   border: none;
-  background-color: transparent;
+  background: url('/images/x.png');
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.button-close:hover{
+  opacity: 0.5;
+}
+
+.button-close:active{
+  opacity: 0.3;
 }
 
 .modal-window-close{

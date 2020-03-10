@@ -63,21 +63,27 @@
         Category Products
       </h2>
       <ul class="categories list_none">
-        <li class="one-category">
-          <a class="fon-grey" href="#"> <span class="category-title"> APPAREL KIDS </span>
-            <img class="category-img-one" src="/images/category-1.png" alt="APPAREL KIDS" /></a>
+        <li class="one-category apparel-kids">
+          <a class="category-link" href="#">
+            <span class="category-title"> apparel </span>
+            <span class="category-title"> kids </span>
+          </a>
         </li>
-        <li class="one-category">
-          <a class="fon-pink" href="#"> <span class="category-title"> HOLIDAY SHOP </span>
-            <img class="category-img" src="/images/category-2.jpg" alt="HOLIDAY SHOP" /></a>
+        <li class="one-category holiday-shop">
+          <a class="category-link" href="#">
+            <span class="category-title"> holiday </span>
+            <span class="category-title"> shop </span>
+          </a>
         </li>
-        <li class="one-category">
-          <a class="fon-peach" href="#"> <span class="category-title"> TOYS </span>
-            <img class="category-img" src="/images/category-3.jpg" alt="TOYS" /></a>
+        <li class="one-category toys">
+          <a class="category-link" href="#">
+            <span class="category-title"> toys </span>
+          </a>
         </li>
-        <li class="one-category">
-          <a class="fon-lilac" href="#"> <span class="category-title"> ACCESSORIES </span>
-            <img class="category-img" src="/images/category-4.jpg" alt="ACCESSORIES" /></a>
+        <li class="one-category accessories">
+          <a class="category-link" href="#">
+            <span class="category-title"> accessories </span>
+          </a>
         </li>
       </ul>
       <div class="category-footer">
@@ -191,7 +197,7 @@
         <li class="footer-connect">
           <p class="footer-title">Connect</p>
           <form class="footer-form" name="text" method="POST" action="">
-            <input type="email" placeholder="Email">
+            <input class="mail" type="email" placeholder="Email">
             <button type="submit" class="button button_black"><span class="button-text">Join</span></button>
           </form>
           <ul class="footer-soc list_none">
@@ -253,8 +259,7 @@
 
       <div class="large-row">
         <label for="form-message" class="form-label">Message</label>
-        <textarea class="large-row" name="message" id="form-message">
-          </textarea>
+        <textarea class="large-row form-input" name="message" id="form-message"></textarea>
       </div>
 
       <div class="large-row">
@@ -264,7 +269,7 @@
         <input type="checkbox" class="form-check" id="form-accept" name="accept">
       </div>
 
-      <button type="submit" class="button button_black"><span class="button-text">SUBMIT</span></button>
+      <button type="submit" class="button button_black" disabled><span class="button-text">SUBMIT</span></button>
       <button type="button" class="button-close button-close_js">X</button>
     </form>
   </div>

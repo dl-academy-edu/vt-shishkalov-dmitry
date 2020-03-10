@@ -36,6 +36,14 @@
   color: #1E0606;
 }
 
+.paper-title:hover{
+  text-decoration-line: underline;
+}
+
+.paper-title:active{
+  text-decoration-line: underline;
+}
+
 .paper-text{
   margin: 0;
   padding-top: 15px;
