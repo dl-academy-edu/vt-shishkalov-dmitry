@@ -15,7 +15,7 @@
 
 <body>
   <header class="header container">
-    <a href="#">
+    <a>
       <img class="header-logo" src="/images/logo.svg" alt="logo" />
     </a>
     <nav class="header-nav">
@@ -65,24 +65,30 @@
       <ul class="categories list_none">
         <li class="one-category apparel-kids">
           <a class="category-link" href="#">
-            <span class="category-title"> apparel </span>
-            <span class="category-title"> kids </span>
+            <div class="category-titles">
+              <span class="category-title"> apparel <br> kids </span>
+            </div>
           </a>
         </li>
         <li class="one-category holiday-shop">
           <a class="category-link" href="#">
-            <span class="category-title"> holiday </span>
-            <span class="category-title"> shop </span>
+            <div class="category-titles">
+              <span class="category-title"> holiday <br> shop </span>
+            </div>
           </a>
         </li>
         <li class="one-category toys">
           <a class="category-link" href="#">
-            <span class="category-title"> toys </span>
+            <div class="category-titles">
+              <span class="category-title"> toys </span>
+            </div>
           </a>
         </li>
         <li class="one-category accessories">
           <a class="category-link" href="#">
-            <span class="category-title"> accessories </span>
+            <div class="category-titles">
+              <span class="category-title"> accessories </span>
+            </div>
           </a>
         </li>
       </ul>
@@ -125,16 +131,16 @@
       <h2 class="hidden">Partners</h2>
       <ul class="partners-list list_none">
         <li>
-          <a href="#"><img src="/images/partner-1.png" alt="mail" /></a>
+          <a href="#"><img class="partner-img" src="/images/partner-1.png" alt="mail" /></a>
         </li>
         <li>
-          <a href="#"><img src="/images/partner-2.png" alt="apple" /></a>
+          <a href="#"><img class="partner-img" src="/images/partner-2.png" alt="apple" /></a>
         </li>
         <li>
-          <a href="#"><img src="/images/partner-3.png" alt="eltex" /></a>
+          <a href="#"><img class="partner-img" src="/images/partner-3.png" alt="eltex" /></a>
         </li>
         <li>
-          <a href="#"><img src="/images/partner-4.png" alt="owox" /></a>
+          <a href="#"><img class="partner-img" src="/images/partner-4.png" alt="owox" /></a>
         </li>
       </ul>
     </section>
@@ -259,17 +265,20 @@
 
       <div class="large-row">
         <label for="form-message" class="form-label">Message</label>
-        <textarea class="large-row form-input" name="message" id="form-message"></textarea>
+        <textarea class="large-row form-input form-area" name="message" id="form-message"></textarea>
       </div>
 
       <div class="large-row">
-        <label for="form-accept" class="form-acception">By clicking on the button, you consent to the processing of
-          your
-          personal data</label>
-        <input type="checkbox" class="form-check" id="form-accept" name="accept">
+        <label class="checkbox-label">
+          <input class="checkbox hidden" type="checkbox" name="color" value="black">
+          <span class="indicator"></span>
+          By clicking on the button, you consent to the processing of your personal data
+        </label>
       </div>
 
-      <button type="submit" class="button button_black" disabled><span class="button-text">SUBMIT</span></button>
+      <button type="submit" class="button button_black" disabled>
+        <span class="button-text button-text_disabled">SUBMIT</span>
+      </button>
       <button type="button" class="button-close button-close_js">X</button>
     </form>
   </div>

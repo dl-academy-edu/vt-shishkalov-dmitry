@@ -56,44 +56,61 @@
 
         <fieldset class="buy-fieldset fieldset-color">
           <legend class="label">Color</legend>
-          <label>
-            <input type="checkbox" name="color" value="black" checked>
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="black" checked>
+            <span class="indicator"></span>
             Black
           </label>
-          <label>
-            <input type="checkbox" name="color" value="blue">
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="blue">
+            <span class="indicator"></span>
             Blue
           </label>
-          <label>
-            <input type="checkbox" name="color" value="green">
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="green">
+            <span class="indicator"></span>
             Green
           </label>
-          <label>
-            <input type="checkbox" name="color" value="white">
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="white">
+            <span class="indicator"></span>
             White
           </label>
         </fieldset>
 
         <fieldset class="buy-fieldset fieldset-shipping">
           <legend class="label">Delivery</legend>
-          <label>
-            <input type="radio" name="delivery" value="free">
+          <label class="radio-label">
+            <input class="radio hidden" type="radio" name="delivery" value="free">
+            <span class="radio-indicator"></span>
             Free shipping
           </label>
-          <label>
-            <input type="radio" name="delivery" value="fast" checked>
+          <label class="radio-label">
+            <input class="radio hidden" type="radio" name="delivery" value="fast" checked>
+            <span class="radio-indicator"></span>
             Fast shipping
           </label>
         </fieldset>
 
         <fieldset class="buy-fieldset">
           <legend class="label">Amount</legend>
-          <label for="small-amount">0-5</label>
-          <input type="radio" name="amount" id="small-amount" value="small" checked>
-          <label for="middle-amount">10-20</label>
-          <input type="radio" name="amount" id="middle-amount" value="middle">
-          <label for="large-amount">20-50</label>
-          <input type="radio" name="amount" id="large-amount" value="large">
+          <div class="amount-d">
+            <label class="amount-label">
+              <span class="amount-value"> 0-5 </span>
+              <input class="amount hidden" type="radio" name="amount" value="small" checked>
+              <span class="amount-indicator"></span>
+            </label>
+            <label class="amount-label">
+              <span class="amount-big-value"> 10-20 </span>
+              <input class="amount hidden" type="radio" name="amount" value="middle">
+              <span class="amount-indicator"></span>
+            </label>
+            <label class="amount-label">
+              <span class="amount-big-value"> 20-50 </span>
+              <input class="amount hidden" type="radio" name="amount" value="large">
+              <span class="amount-indicator"></span>
+            </label>
+          </div>
         </fieldset>
         <button type="submit" class="button apply-button button_black"><span class="button-text">Apply</span></button>
       </form>

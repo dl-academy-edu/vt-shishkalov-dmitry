@@ -2,18 +2,15 @@
 .category-top{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.category-lower{
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 200px;
-  margin-bottom: 50px;
 }
 
 .one-category{
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.one-category:nth-child(4){
+  margin-left: 200px;
 }
 
 .sale{
@@ -58,6 +55,7 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1E0606;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 

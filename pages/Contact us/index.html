@@ -64,14 +64,15 @@
 
         <div class="large-row">
           <label for="form-message" class="form-label">Message</label>
-          <textarea class="large-row form-input" name="message" id="form-message"></textarea>
+          <textarea class="large-row form-input form-area" name="message" id="form-message"></textarea>
         </div>
 
         <div class="large-row">
-          <label for="form-accept" class="form-acception">By clicking on the button, you consent to the processing of
-            your
-            personal data</label>
-          <input type="checkbox" class="form-check" id="form-accept" name="accept">
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="black" checked>
+            <span class="indicator"></span>
+            By clicking on the button, you consent to the processing of your personal data
+          </label>
         </div>
 
         <button type="submit" class="button button_black"><span class="button-text">SUBMIT</span></button>
