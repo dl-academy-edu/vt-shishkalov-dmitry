@@ -1,10 +1,11 @@
 
 .content{
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .support{
+  margin-top: -3px;
   margin-left: 120px;
   width: 380px;
   display: flex;
@@ -14,7 +15,7 @@
 }
 
 .text{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

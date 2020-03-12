@@ -81,7 +81,7 @@
 }
 
 .poster-design{
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -174,7 +174,7 @@
 
 .delivery{
   display: flex;
-  margin-top: 90px;
+  margin-top: 73px;
   justify-content: start;
   flex-wrap: wrap;
 }
@@ -192,13 +192,13 @@
 }
 
 .delivery-link{
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
   display: inline-block;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 }
 
 .delivery-link:hover{
@@ -223,12 +223,11 @@
 .delivery-text{
   width: 480px;
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 7px; 
+  padding-bottom: 15px; 
 }
 
 .delivery-button{
-  margin-top: 19px;
+  margin-top: 13px;
 }
 
 /* partners */
@@ -274,7 +273,7 @@
 }
 
 h3{
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-size: 26px;
   line-height: 32px;

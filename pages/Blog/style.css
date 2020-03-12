@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -5px;
 }
 
 .paper_item{
@@ -17,7 +18,7 @@
 }
 
 .paper-date{
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
@@ -48,7 +49,7 @@
   margin: 0;
   padding-top: 15px;
   padding-bottom: 20px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

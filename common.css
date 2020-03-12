@@ -47,7 +47,7 @@ img {
 .button-text{
   display: inline-block;
   padding: 9px 22px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -275,7 +275,7 @@ img {
 }
 
 .active-tab{
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -289,7 +289,7 @@ img {
 }
 
 .passive-tab{
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -471,7 +471,7 @@ p.footer-link:active{
 
 .footer-last{
   position: relative;
-  margin-top: 52px;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -600,7 +600,7 @@ p.footer-link:active{
 
 .pages{
   margin-top: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
