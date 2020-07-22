@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Catalog</title>
+  <title>Main</title>
   <link
     href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,700i%7CMontserrat:300,400,700%7COpen+Sans:400,700%7CRoboto&display=swap"
     rel="stylesheet">
@@ -20,88 +20,71 @@
     <nav class="header-nav">
       <ul class="header-list-links list_none">
         <li><a class="link link_nav" href="/pages/Blog/index.html">Blog</a></li>
-        <li><a class="link link_nav" href="#">Catalog</a></li>
+        <li><a class="link link_nav" href="/pages/Catalog/index.html">Catalog</a></li>
         <li><a class="link link_nav" href="/pages/Toys/index.html">Toys</a></li>
       </ul>
       <ul class="header-list-search list_none">
         <li><img class="search" src="/images/search.png" alt="search" /></li>
-        <li><a class="link link_cont" href="/pages/Contact us/index.html">Contact Us</a></li>
+        <li><a class="link link_cont" href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1 class="title container">
-      Category Products
+      Contact Us
     </h1>
 
     <div class="navigation container">
       <a class="active-tab" href="/index.html">Home</a>
       <img src="/images/br.png" alt=">">
-      <a class="passive-tab">Catalog</a>
+      <a class="passive-tab">Contact us</a>
     </div>
 
-    <section class="category container">
-      <ul class="category-top list_none">
-        <li class="one-category apparel-kids">
-          <a class="category-link" href="#">
-            <div class="category-titles">
-              <span class="category-title"> apparel <br> kids </span>
-            </div>
-          </a>
-        </li>
-        <li class="one-category holiday-shop">
-          <a class="category-link" href="#">
-            <div class="category-titles">
-              <span class="category-title"> holiday <br> shop </span>
-            </div>
-          </a>
-        </li>
-        <li class="one-category toys">
-          <a class="category-link" href="#">
-            <div class="category-titles">
-              <span class="category-title"> toys </span>
-            </div>
-          </a>
-        </li>
-        <li class="one-category accessories">
-          <a class="category-link" href="#">
-            <div class="category-titlesr">
-              <span class="category-title"> accessories </span>
-            </div>
-          </a>
-        </li>
-        <li class="one-category sale">
-          <a class="category-link" href="#">
-            <div class="category-titles">
-              <span class="category-title"> sale </span>
-            </div>
-          </a>
-        </li>
-        <li class="one-category apparel-adults">
-          <a class="category-link" href="#">
-            <div class="category-titles">
-              <span class="category-title"> apparel <br> adults </span>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="content container">
+      <form class="registration" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
 
-    <section class="description container">
-      <h2 class="description-title">
-        Product Description
-      </h2>
-      <p class="description-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost
-        really cry. You can even
-        bathe her, just like a little sister.</p>
-      <p class="description-text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright.
-        Such a doll will be an
-        excellent choice for a gift for a girl from 4 years old.</p>
-      <p class="description-text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for
-        water, a pair of hairpins
-        and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-    </section>
+        <div class="large-row">
+          <label for="form-name" class="form-label">Name</label>
+          <input type="text" class="form-input" id="form-name" name="name" placeholder="Ivan Ivanov">
+        </div>
+
+        <div class="large-row">
+          <div class="little-row">
+            <label for="form-phone" class="form-label">Phone</label>
+            <input type="tel" class="form-input" id="form-phone" name="phone">
+          </div>
+
+          <div class="little-row">
+            <label for="form-email" class="form-label">E-mail</label>
+            <input type="email" class="form-input" id="form-email" name="email">
+          </div>
+        </div>
+
+        <div class="large-row">
+          <label for="form-message" class="form-label">Message</label>
+          <textarea class="large-row form-input form-area" name="message" id="form-message"></textarea>
+        </div>
+
+        <div class="large-row">
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="black" checked>
+            <span class="indicator"></span>
+            By clicking on the button, you consent to the processing of your personal data
+          </label>
+        </div>
+
+        <button type="submit" class="button button_black"><span class="button-text">SUBMIT</span></button>
+      </form>
+
+      <article class="support">
+        <p class="text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon
+          as
+          possible.</p>
+        <p class="attention">An expert is waiting to help you!</p>
+      </article>
+    </div>
   </main>
 
   <footer>

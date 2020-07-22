@@ -4,184 +4,254 @@
 <head>
   <meta charset="utf-8" />
   <title>Toys</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,700i%7CMontserrat:300,400,700%7COpen+Sans:400,700%7CRoboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/common.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header container">
     <a href="/index.html">
       <img class="header-logo" src="/images/logo.svg" alt="logo" />
     </a>
     <nav class="header-nav">
-      <ul>
+      <ul class="header-list-links list_none">
         <li><a class="link link_nav" href="/pages/Blog/index.html">Blog</a></li>
         <li><a class="link link_nav" href="/pages/Catalog/index.html">Catalog</a></li>
-        <li><a class="link link_nav" href="#">About Us</a></li>
+        <li><a class="link link_nav" href="#">Toys</a></li>
       </ul>
-      <ul>
+      <ul class="header-list-search list_none">
         <li><img class="search" src="/images/search.png" alt="search" /></li>
-        <li><a class="link link_cont" href="#">Contact Us</a></li>
+        <li><a class="link link_cont" href="/pages/Contact us/index.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1 class="title">
+    <h1 class="title container">
       Toy for kids
     </h1>
 
-    <div class="section">
-      <a href="/index.html">Home</a>
-      <a href="/pages/Catalog/index.html">Catalog</a>
-      <a>Toys</a>
+    <div class="navigation container">
+      <a class="active-tab" href="/index.html">Home</a>
+      <img src="/images/br.png" alt=">">
+      <a class="active-tab catalog" href="/pages/Catalog/index.html">Catalog</a>
+      <img src="/images/br.png" alt=">">
+      <a class="passive-tab">Toys</a>
     </div>
 
-    <form action="" class="buy" method="GET">
-      <label for="cost">Cost</label>
-      <input type="range" id="cost" name="cost" min="0" max="500" value="100">
-      <span>0</span>
-      <span>500</span>
+    <div class="buy-form">
+      <form action="https://form-data-dl.herokuapp.com/api/messages" class="buy container" method="GET">
+        <div class="cost-range">
+          <label class="label" for="cost">Cost</label>
+          <input type="range" id="cost" name="cost" min="0" max="500" value="100">
+          <div class="range">
+            <span class="form-number">0</span>
+            <span class="form-number">500</span>
+          </div>
+        </div>
 
-      <fieldset>
-        <legend>Color</legend>
-        <label for="color-black">Black</label>
-        <input type="checkbox" name="color" id="color-black" value="black" checked>
-        <label for="color-blue">Blue</label>
-        <input type="checkbox" name="color" id="color-blue" value="blue">
-        <label for="color-green">Green</label>
-        <input type="checkbox" name="color" id="color-green" value="green">
-        <label for="color-white">White</label>
-        <input type="checkbox" name="color" id="color-white" value="white">
-      </fieldset>
+        <fieldset class="buy-fieldset fieldset-color">
+          <legend class="label">Color</legend>
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="black" checked>
+            <span class="indicator"></span>
+            Black
+          </label>
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="blue">
+            <span class="indicator"></span>
+            Blue
+          </label>
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="green">
+            <span class="indicator"></span>
+            Green
+          </label>
+          <label class="checkbox-label">
+            <input class="checkbox hidden" type="checkbox" name="color" value="white">
+            <span class="indicator"></span>
+            White
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Delivery</legend>
-        <label for="delivery-free">Free shipping</label>
-        <input type="radio" name="delivery" id="delivery-free" value="free">
-        <label for="delivery-fast">Fast shipping</label>
-        <input type="radio" name="delivery" id="delivery-fast" value="fast" checked>
-      </fieldset>
+        <fieldset class="buy-fieldset fieldset-shipping">
+          <legend class="label">Delivery</legend>
+          <label class="radio-label">
+            <input class="radio hidden" type="radio" name="delivery" value="free">
+            <span class="radio-indicator"></span>
+            Free shipping
+          </label>
+          <label class="radio-label">
+            <input class="radio hidden" type="radio" name="delivery" value="fast" checked>
+            <span class="radio-indicator"></span>
+            Fast shipping
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Amount</legend>
-        <label for="small-amount">0-5</label>
-        <input type="radio" name="amount" id="small-amount" value="small" checked>
-        <label for="middle-amount">10-20</label>
-        <input type="radio" name="amount" id="middle-amount" value="middle">
-        <label for="large-amount">20-50</label>
-        <input type="radio" name="amount" id="large-amount" value="large">
-      </fieldset>
-      <button type="submit" class="button">APPLY</button>
-    </form>
+        <fieldset class="buy-fieldset">
+          <legend class="label">Amount</legend>
+          <div class="amount-d">
+            <label class="amount-label">
+              <span class="amount-value"> 0-5 </span>
+              <input class="amount hidden" type="radio" name="amount" value="small" checked>
+              <span class="amount-indicator"></span>
+            </label>
+            <label class="amount-label">
+              <span class="amount-big-value"> 10-20 </span>
+              <input class="amount hidden" type="radio" name="amount" value="middle">
+              <span class="amount-indicator"></span>
+            </label>
+            <label class="amount-label">
+              <span class="amount-big-value"> 20-50 </span>
+              <input class="amount hidden" type="radio" name="amount" value="large">
+              <span class="amount-indicator"></span>
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit" class="button apply-button button_black"><span class="button-text">Apply</span></button>
+      </form>
+    </div>
 
-    <div class="product">
-      <ul>
-        <li>
+    <section class="container">
+      <ul class="products list_none">
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-1.jpg" alt="sharky">
-            <span>SHARKY BEAN BAG CHAIR COVER</span></a>
-          <span>$60.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">SHARKY BEAN BAG CHAIR COVER</span>
+          </a>
+          <span class="product-price">$60.00 USD</span>
         </li>
-        <li>
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-2.jpg" alt="brass">
-            <span>BRASS DECO FRAMES</span></a>
-          <span>$66.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">BRASS DECO FRAMES</span>
+          </a>
+          <span class="product-price">$66.00 USD</span>
         </li>
-        <li>
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-3.jpg" alt="cibo">
-            <span>CIBO FULL APRON</span></a>
-          <span>$60.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">CIBO FULL APRON</span>
+          </a>
+          <span class="product-price">$60.00 USD</span>
         </li>
-        <li>
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-4.jpg" alt="gumball machine">
-            <span>GATCHA GATCHA GUMBALL MACHINE</span></a>
-          <span>$56.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">GATCHA GATCHA GUMBALL MACHINE</span>
+          </a>
+          <span class="product-price">$56.00 USD</span>
         </li>
-        <li>
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-5.jpg" alt="candle">
-            <span>CHRISTMAS ADVENT SCENTED CANDLE</span></a>
-          <span>$29.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">CHRISTMAS ADVENT SCENTED CANDLE</span>
+          </a>
+          <span class="product-price">$29.00 USD</span>
         </li>
-        <li>
+        <li class="one-product">
           <a class="product-link" href="#"><img class="product-img" src="/images/toy-6.jpg" alt="tea light">
-            <span>TANGLE SPINNING TEA LIGHT</span></a>
-          <span>$56.00 USD</span>
+            <div class="learn-more">
+              <span class="learn-more-text">LEARN MORE</span>
+            </div>
+            <span class="product-name">TANGLE SPINNING TEA LIGHT</span>
+          </a>
+          <span class="product-price">$56.00 USD</span>
         </li>
       </ul>
-    </div>
-    <div class="pages">
-      <a class="left" href="#"></a>
-      <a class="numder" href="#">1</a>
-      <a class="numder" href="#">2</a>
-      <a class="numder" href="#">3</a>
-      <a class="numder" href="#">4</a>
-      <a class="right" href="#"></a>
+    </section>
+    <div class="pages container">
+      <a class="left" href="#"><img src="/images/page-left.png" alt=""></a>
+      <div class="numbers">
+        <a class="numder numder-one" href="#">1</a>
+        <a class="numder" href="#">2</a>
+        <a class="numder" href="#">3</a>
+        <a class="numder" href="#">4</a>
+      </div>
+      <a class="right" href="#"><img src="/images/page-right.png" alt=""></a>
     </div>
   </main>
 
   <footer>
-    <ul>
-      <li>
-        <p class="footer-title">Navigation</p>
-        <ul>
-          <li><a class="footer-link" href="#">About Us</a></li>
-          <li><a class="footer-link" href="#">Blog</a></li>
-          <li><a class="footer-link" href="#">Design Services</a></li>
-          <li><a class="footer-link" href="#">Featured On</a></li>
-          <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-          <li><a class="footer-link" href="#">Shop By Designer</a></li>
-        </ul>
-      </li>
-      <li>
-        <p class="footer-title">Customer Information</p>
-        <ul>
-          <li><a class="footer-link" href="#">Contact Us</a></li>
-          <li><a class="footer-link" href="#">Sale Exclusions</a></li>
-          <li><a class="footer-link" href="#">Shipping & Returns</a></li>
-          <li><a class="footer-link" href="#">Terms & Conditions</a></li>
-          <li><a class="footer-link" href="#">Privacy Policy</a></li>
-          <li><a class="footer-link" href="#">Search</a></li>
-        </ul>
-      </li>
-      <li>
-        <p class="footer-title">Connect</p><br>
-        <form name="text" method="POST" action="">
-          <input type="email">
-          <button type="submit" class="button button_black"> Join </button>
-        </form>
-        <ul>
-          <li>
-            <a class="social-link" href="#"><img src="/images/f.svg" alt="facebook" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/twit.svg" alt="twitter" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/p.svg" alt="p" /></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><img src="/images/inst.svg" alt="instagram" /></a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <div class="container">
+      <ul class="footer-inf list_none">
+        <li class="footer-nav">
+          <p class="footer-title">Navigation</p>
+          <ul class="list_none">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">Blog</a></li>
+            <li><a class="footer-link" href="#">Design Services</a></li>
+            <li><a class="footer-link" href="#">Featured On</a></li>
+            <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+            <li><a class="footer-link" href="#">Shop By Designer</a></li>
+          </ul>
+        </li>
+        <li class="footer-custom">
+          <p class="footer-title">Customer Information</p>
+          <ul class="list_none">
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="#">Sale Exclusions</a></li>
+            <li><a class="footer-link" href="#">Shipping & Returns</a></li>
+            <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+            <li><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-link" href="#">Search</a></li>
+          </ul>
+        </li>
+        <li class="footer-connect">
+          <p class="footer-title">Connect</p>
+          <form class="footer-form" name="text" method="POST" action="">
+            <input class="mail" type="email" placeholder="Email">
+            <button type="submit" class="button button_black"><span class="button-text">Join</span></button>
+          </form>
+          <ul class="footer-soc list_none">
+            <li>
+              <a class="social-link" href="#"><img src="/images/f.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/twit.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/p.svg" alt="p" /></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><img src="/images/inst.svg" alt="instagram" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <ul>
-      <li>
-        <p class="social-link">Company Rating</p>
-        <ul>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-          <li><img src="/images/Star.svg" alt="star" /></li>
-        </ul>
-      </li>
-      <li>
-        <p class="social-link">Copyright © 2018 Dlk • Design Life Kids</p>
-      </li>
-      <li>
-        <a href="#">Web Design — Direct Line Development</a>
-      </li>
-    </ul>
+      <ul class="footer-last list_none">
+        <li class="footer-rating">
+          <p class="footer-link">Company Rating</p>
+          <ul class="stars list_none">
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+            <li><img class="star" src="/images/Star.svg" alt="star" /></li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-link">Copyright © 2018 Dlk • Design Life Kids</p>
+        </li>
+        <li>
+          <a class="footer-text" href="#">Web Design — Direct Line Development</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 
